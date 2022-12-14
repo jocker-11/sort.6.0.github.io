@@ -1,0 +1,85 @@
+.view{
+    width: 640px;
+    height: 360px;
+    border:10px solid tan;
+    position: relative;
+    overflow: hidden; /*隱藏超過的部分*/
+    display:block;
+    cursor: pointer;
+}
+.view video{
+    position: absolute;
+    width:100%;
+    height:100%;
+    transform: transform .2s;
+}
+.view:hover video{ 
+    transform: scale(1.5,1.5);
+}
+.view .mask{
+    position: absolute;
+    text-align: center;
+    width:100%;
+    height:100%;
+    opacity: 0;
+    background-color:rgba(102, 157, 123, 0.7);;
+}
+.view:hover .mask{
+    opacity: 1;
+}
+.view .mask p{
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    transform:translateY(-50px);
+    padding:10px;
+    background-color: rgba(255, 255, 150, 0.7);
+    transition:  all .3s ease-in-out;
+}
+.view:hover p{
+    transform:translateY(70px);
+    opacity: 1;
+}
+
+.view_1{
+    width: 640px;
+    height: 360px;
+    border:10px solid tan;
+    position: relative;
+    overflow: hidden; /*隱藏超過的部分*/
+    display:block;
+    cursor: pointer;
+}
+.view_1 img{
+    position: absolute;
+    width:100%;
+    height:100%;
+    transform: transform .2s;
+}
+.view_1:hover img{ 
+    transform: scale(1.5,1.5);
+}
+.view_1 .mask_1{
+    position: absolute;
+    text-align: center;
+    width:100%;
+    height:100%;
+    opacity: 0;
+    background-color:rgba(102, 157, 123, 0.7);;
+}
+.view_1:hover .mask_1{
+    opacity: 1;
+}
+.view_1 .mask_1 p{
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    transform:translateY(-50px);
+    padding:10px;
+    background-color: rgba(255, 255, 150, 0.7);
+    transition:  all .3s ease-in-out;
+}
+.view_1:hover p{
+    transform:translateY(70px);
+    opacity: 1;
+}
